@@ -9,7 +9,11 @@ function TodoList() {
 
   return (
     <>
-      <TodoListItem todos={todos} />
+      <ul>
+        {todos.map((todo) => (
+          <TodoListItem todo={todo} />
+        ))}
+      </ul>
     </>
   );
 }

@@ -1,11 +1,7 @@
-const TodoListItem = ({ todos }) => {
+const TodoListItem = ({ todo }) => {
   return (
     <>
-      <ul>
-        {todos.map((todo) => (
-          <li key={todo.id}>{todo.title}</li>
-        ))}
-      </ul>
+      <li key={todo.id}>{todo.title}</li>
     </>
   );
 };
